@@ -1,0 +1,86 @@
+.admin-asidebar {
+  position: fixed;
+  background: #ffffff;
+  border-radius: 0px 15px 15px 0px;
+  height: 100vh;
+  width: 16%;
+
+  .asidebar-content {
+    .logo {
+      padding: 7px 0px 50px 38px;
+    }
+
+    .admin-navbar {
+      padding-left: 38px;
+
+      .add-property {
+        a {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          background: #f7b03e;
+          border-radius: 12px;
+          width: fit-content;
+          padding: 9px 50px 9px 18px;
+          img {
+            margin-right: 13px;
+          }
+        }
+      }
+      .navbar {
+        margin-top: 33px;
+        ul {
+          li {
+            margin: 0;
+            padding: 0;
+            margin-top: 40px;
+            &:first-child {
+              margin-top: 0;
+            }
+            a {
+              font-family: "Manrope";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              color: #808191;
+              display: flex;
+              align-items: center;
+              padding: 0;
+
+              .nav-icon {
+                margin-right: 21px;
+              }
+              &:active {
+                font-family: "Manrope";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                color: #000000;
+              }
+              &:focus {
+                font-family: "Manrope";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.other {
+  background-color: aqua;
+  width: 83%;
+  height: 200vh;
+  position: absolute;
+  left: 17%;
+  margin-right: 31px;
+}
