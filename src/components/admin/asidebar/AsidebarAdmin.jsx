@@ -50,7 +50,7 @@ const AsidebarAdmin = () => {
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <NavLink class="nav-link" to="/adminProperty">
                     <Icon
                       icon="bi:house-check-fill"
                       width="20"
@@ -58,7 +58,7 @@ const AsidebarAdmin = () => {
                       className="nav-icon"
                     />
                     My Property
-                  </a>
+                  </NavLink>
                 </li>
 
                 <li class="nav-item">
@@ -69,7 +69,7 @@ const AsidebarAdmin = () => {
                       height="20"
                       className="nav-icon"
                     />
-                    My Property
+                    Ownership
                   </NavLink>
                 </li>
 
@@ -89,7 +89,7 @@ const AsidebarAdmin = () => {
           </div>
         </div>
       </section>
-      <section className="other">
+      <section className="other-sction">
         <Routes>
           <Route>
             <Route path="/" element={<DashboardAdmin />} />

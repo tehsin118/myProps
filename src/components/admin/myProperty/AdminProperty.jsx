@@ -1,9 +1,11 @@
 import React from "react";
-
+import "./adminProperty.scss";
 const AdminProperty = () => {
   return (
     <div>
-      <h1>Admin Property</h1>
+      <section className="admin-property">
+        <h1>Admin-property</h1>
+      </section>
     </div>
   );
 };
