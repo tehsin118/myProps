@@ -7,6 +7,7 @@ import add from "../../../assets/images/add.svg";
 import AdminMessage from "../message/AdminMessage";
 import AdminProperty from "../myProperty/AdminProperty";
 import DashboardAdmin from "../dashboard/DashboardAdmin";
+import Ownership from "../ownership/Ownership";
 
 const AsidebarAdmin = () => {
   return (
@@ -62,7 +63,7 @@ const AsidebarAdmin = () => {
                 </li>
 
                 <li class="nav-item">
-                  <NavLink class="nav-link" href="#">
+                  <NavLink class="nav-link" to="/ownerShip">
                     <Icon
                       icon="mdi:arrow-left-right-bold"
                       width="20"
@@ -95,6 +96,7 @@ const AsidebarAdmin = () => {
             <Route path="/" element={<DashboardAdmin />} />
             <Route path="/adminMsg" element={<AdminMessage />} />
             <Route path="/adminProperty" element={<AdminProperty />} />
+            <Route path="/ownerShip" element={<Ownership />} />
           </Route>
         </Routes>
       </section>
