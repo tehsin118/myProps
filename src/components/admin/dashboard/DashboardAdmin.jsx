@@ -235,6 +235,7 @@ const DashboardAdmin = () => {
             </div>
             <div className="right-content">
               <div className="overview-chart">
+                {/* <ResponsiveContainer className="bg-danger"> */}
                 <LineChart
                   width={600}
                   height={240}
@@ -245,6 +246,7 @@ const DashboardAdmin = () => {
                     left: 10,
                     bottom: 5,
                   }}
+                  className="line-chart"
                 >
                   <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="name" />
@@ -265,6 +267,7 @@ const DashboardAdmin = () => {
                     strokeWidth={2}
                   />
                 </LineChart>
+                {/* </ResponsiveContainer> */}
               </div>
             </div>
           </div>

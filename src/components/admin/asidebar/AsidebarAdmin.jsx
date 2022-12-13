@@ -5,9 +5,10 @@ import { Icon } from "@iconify/react";
 import weblogo from "../../../assets/images/logo.svg";
 import add from "../../../assets/images/add.svg";
 import AdminMessage from "../message/AdminMessage";
-import AdminProperty from "../myProperty/AdminProperty";
+
 import DashboardAdmin from "../dashboard/DashboardAdmin";
 import Ownership from "../ownership/Ownership";
+import AdminAddProperty from "../adminAddProperty/AdminAddProperty";
 
 const AsidebarAdmin = () => {
   return (
@@ -19,7 +20,7 @@ const AsidebarAdmin = () => {
           </div>
           <div className="admin-navbar">
             <div className="add-property ">
-              <NavLink to="/adminProperty">
+              <NavLink to="/adminAddProperty">
                 <img src={add} alt="" className="img-fluid" />
                 Add Property
               </NavLink>
@@ -95,7 +96,7 @@ const AsidebarAdmin = () => {
           <Route>
             <Route path="/" element={<DashboardAdmin />} />
             <Route path="/adminMsg" element={<AdminMessage />} />
-            <Route path="/adminProperty" element={<AdminProperty />} />
+            <Route path="/adminAddProperty" element={<AdminAddProperty />} />
             <Route path="/ownerShip" element={<Ownership />} />
           </Route>
         </Routes>
