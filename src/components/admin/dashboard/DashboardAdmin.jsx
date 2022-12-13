@@ -12,7 +12,9 @@ import {
 
 import "./adminDash.scss";
 import viewProps from "../../../assets/images/viewProp.png";
+import member from "../../../assets/images/recentmmb.png";
 import { PieChart, Pie, Sector, Cell } from "recharts";
+import NewlyInvested from "./NewlyInvested";
 
 const DashboardAdmin = () => {
   const investor = [
@@ -45,56 +47,56 @@ const DashboardAdmin = () => {
   const overviewChart = [
     {
       name: "April",
-      uv: 4000,
-      pv: 2400,
+      sold: 4000,
+      Rent: 2400,
       amt: 20,
     },
     {
       name: "May",
-      uv: 3000,
-      pv: 1398,
+      sold: 3000,
+      Rent: 1398,
       amt: 2210,
     },
     {
       name: "June",
-      uv: 2000,
-      pv: 9800,
+      sold: 2000,
+      Rent: 9800,
       amt: 2290,
     },
     {
       name: "July",
-      uv: 2780,
-      pv: 3908,
+      sold: 2780,
+      Rent: 3908,
       amt: 2000,
     },
     {
       name: "Aug",
-      uv: 1890,
-      pv: 4800,
+      sold: 1890,
+      Rent: 4800,
       amt: 2181,
     },
     {
       name: " Sep",
-      uv: 2390,
-      pv: 3800,
+      sold: 2390,
+      Rent: 3800,
       amt: 2500,
     },
     {
       name: " Oct",
-      uv: 3490,
-      pv: 4300,
+      sold: 3490,
+      Rent: 4300,
       amt: 2100,
     },
     {
       name: "Nov ",
-      uv: 3490,
-      pv: 4300,
+      sold: 3490,
+      Rent: 4300,
       amt: 2100,
     },
     {
       name: " Dec",
-      uv: 90,
-      pv: 4300,
+      sold: 90,
+      Rent: 4300,
       amt: 2100,
     },
   ];
@@ -240,33 +242,121 @@ const DashboardAdmin = () => {
                   margin={{
                     top: 5,
                     right: 30,
-                    left: 20,
+                    left: 10,
                     bottom: 5,
                   }}
                 >
-                  <CartesianGrid strokeDasharray="5 5" />
+                  <CartesianGrid strokeDasharray="3 3" />
                   <XAxis dataKey="name" />
                   <YAxis />
                   <Tooltip />
                   <Legend />
                   <Line
                     type="monotone"
-                    dataKey="pv"
-                    stroke="#8884d8"
+                    dataKey="Rent"
+                    stroke="#216FED"
                     activeDot={{ r: 8 }}
+                    strokeWidth={2}
                   />
-                  <Line type="monotone" dataKey="uv" stroke="#82ca9d" />
+                  <Line
+                    type="monotone"
+                    dataKey="sold"
+                    stroke="#6C5DD3"
+                    strokeWidth={2}
+                  />
                 </LineChart>
               </div>
             </div>
           </div>
+
           <div className="dash-revenue-content">
             <div className="left-content"></div>
             <div className="right-content">
               <div className="rv-sect-header">
                 <h1>Recent Investors</h1>
               </div>
+
+              <div className="recent-investors">
+                <div className="row">
+                  <div className="col-6 left d-flex mb-3">
+                    <div className="mmbr-img">
+                      <img src={member} alt="" />
+                    </div>
+                    <div className="member-detail">
+                      <h6 className="member-name">Chynita Heree</h6>
+                      <p className="customer-type">Regular Customer</p>
+                    </div>
+                  </div>
+                  <div className="col-6 left d-flex mb-3">
+                    <div className="mmbr-img">
+                      <img src={member} alt="" />
+                    </div>
+                    <div className="member-detail">
+                      <h6 className="member-name">Chynita Heree</h6>
+                      <p className="customer-type">Regular Customer</p>
+                    </div>
+                  </div>
+                  <div className="col-6 left d-flex mb-3">
+                    <div className="mmbr-img">
+                      <img src={member} alt="" />
+                    </div>
+                    <div className="member-detail">
+                      <h6 className="member-name">Chynita Heree</h6>
+                      <p className="customer-type">Regular Customer</p>
+                    </div>
+                  </div>
+                  <div className="col-6 left d-flex mb-3">
+                    <div className="mmbr-img">
+                      <img src={member} alt="" />
+                    </div>
+                    <div className="member-detail">
+                      <h6 className="member-name">Chynita Heree</h6>
+                      <p className="customer-type">Regular Customer</p>
+                    </div>
+                  </div>
+                  <div className="col-6 left d-flex mb-3">
+                    <div className="mmbr-img">
+                      <img src={member} alt="" />
+                    </div>
+                    <div className="member-detail">
+                      <h6 className="member-name">Chynita Heree</h6>
+                      <p className="customer-type">Regular Customer</p>
+                    </div>
+                  </div>
+                  <div className="col-6 left d-flex mb-3">
+                    <div className="mmbr-img">
+                      <img src={member} alt="" />
+                    </div>
+                    <div className="member-detail">
+                      <h6 className="member-name">Chynita Heree</h6>
+                      <p className="customer-type">Regular Customer</p>
+                    </div>
+                  </div>
+                  <div className="col-6 left d-flex mb-3">
+                    <div className="mmbr-img">
+                      <img src={member} alt="" />
+                    </div>
+                    <div className="member-detail">
+                      <h6 className="member-name">Chynita Heree</h6>
+                      <p className="customer-type">Regular Customer</p>
+                    </div>
+                  </div>
+                  <div className="col-6 left d-flex mb-3">
+                    <div className="mmbr-img">
+                      <img src={member} alt="" />
+                    </div>
+                    <div className="member-detail">
+                      <h6 className="member-name">Chynita Heree</h6>
+                      <p className="customer-type">Regular Customer</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div className="new-invested">
+            <NewlyInvested />
           </div>
         </div>
       </section>
