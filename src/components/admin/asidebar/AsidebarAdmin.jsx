@@ -74,7 +74,7 @@ const AsidebarAdmin = () => {
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link" href="#">
+                  <NavLink class="nav-link" to="#">
                     <Icon
                       icon="fluent-mdl2:hexadite-investigation-semi-auto"
                       width="20"
@@ -82,7 +82,7 @@ const AsidebarAdmin = () => {
                       className="nav-icon"
                     />
                     Investors
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </nav>

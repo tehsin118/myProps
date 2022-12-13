@@ -3,8 +3,8 @@ import "./adminProperty.scss";
 const AdminProperty = () => {
   return (
     <div>
-      <section className="admin-property">
-        <h1>Admin-property</h1>
+      <section className="admin-add-property">
+        <h1>he</h1>
       </section>
     </div>
   );

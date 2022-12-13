@@ -55,17 +55,9 @@
                 margin-right: 21px;
               }
               &:active {
-                font-family: "Manrope";
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
                 color: #000000;
               }
               &:focus {
-                font-family: "Manrope";
-                font-style: normal;
-                font-weight: 700;
-                font-size: 16px;
                 color: #000000;
               }
             }
@@ -74,13 +66,55 @@
       }
     }
   }
+
+  @media screen and (max-width: 1450px) {
+    .logo {
+      img {
+        max-width: 80% !important;
+      }
+    }
+
+    .add-property {
+      a {
+        padding: 9px 30px 9px 18px !important;
+        img {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .add-property {
+      a {
+        padding: 9px 18px 9px 18px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .admin-navbar {
+      padding-left: 20px !important;
+      .add-property {
+        a {
+          padding: 9px !important;
+          font-weight: 700;
+          font-size: 13px !important;
+        }
+      }
+      .navbar {
+        a {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
 }
 
 .other-sction {
-  background-color: aqua;
-  width: 83%;
-  height: 200vh;
+  width: 82.5%;
   position: absolute;
   left: 17%;
-  margin-right: 31px;
+  // margin-right: 31px;
+  // background-color: #ffffff;
+  border-radius: 30px;
 }
