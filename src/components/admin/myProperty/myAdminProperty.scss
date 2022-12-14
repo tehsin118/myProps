@@ -1,0 +1,150 @@
+.admin-property {
+  overflow-x: hidden;
+  .properties-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 26px;
+    padding: 14px 60px 22px 26px;
+    // height: 79px;
+
+    .left {
+      display: flex;
+      padding: 10px 0px 10px 33px;
+      border: 1px solid #f3f3f3;
+      border-radius: 27px;
+      width: 527px;
+
+      input {
+        width: 100%;
+        border: none;
+        background: transparent;
+        margin-left: 18px;
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        /* identical to box height, or 150% */
+
+        /* 2nd text color */
+
+        color: #808191;
+
+        &:focus {
+          outline: none;
+        }
+
+        &::placeholder {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 18px;
+          /* identical to box height, or 150% */
+
+          /* 2nd text color */
+
+          color: #808191;
+        }
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      padding: 21px 6px 18px 0px;
+
+      h6 {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: #000000;
+      }
+
+      p {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+
+        color: #686868;
+      }
+
+      .notify {
+        margin-right: 20px;
+      }
+
+      .profile {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .properties-content {
+    padding: 36px 50px 36px 50px;
+    background: #ffffff;
+    border-radius: 15px;
+    margin-bottom: 22px;
+
+    h1 {
+      margin-bottom: 20px;
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 22px;
+      line-height: 30px;
+      /* identical to box height */
+
+      color: #000000;
+    }
+
+    .properties-cards {
+      // for grid
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, auto);
+      gap: 22px;
+      margin-inline: auto;
+
+      .property-card {
+        border: 1px solid #c7c7c7;
+        border-radius: 15px;
+        padding: 12px 9px 7px 12px;
+
+        h5 {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+
+          color: #000000;
+          margin: 13px 0px 7px 12px;
+        }
+
+        .card-right {
+          display: flex;
+          margin-top: 13px;
+
+          justify-content: flex-end;
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 19px;
+
+          color: #f7b03e;
+
+          p {
+            margin-right: 9px;
+          }
+        }
+      }
+    }
+  }
+}

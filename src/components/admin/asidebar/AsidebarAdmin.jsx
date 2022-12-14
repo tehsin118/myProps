@@ -9,6 +9,7 @@ import AdminMessage from "../message/AdminMessage";
 import DashboardAdmin from "../dashboard/DashboardAdmin";
 import Ownership from "../ownership/Ownership";
 import AdminAddProperty from "../adminAddProperty/AdminAddProperty";
+import MyAdminProperty from "../myProperty/MyAdminProperty";
 
 const AsidebarAdmin = () => {
   return (
@@ -52,7 +53,7 @@ const AsidebarAdmin = () => {
                 </li>
 
                 <li class="nav-item">
-                  <NavLink class="nav-link" to="/adminProperty">
+                  <NavLink class="nav-link" to="/myAdminProperty">
                     <Icon
                       icon="bi:house-check-fill"
                       width="20"
@@ -98,6 +99,7 @@ const AsidebarAdmin = () => {
             <Route path="/adminMsg" element={<AdminMessage />} />
             <Route path="/adminAddProperty" element={<AdminAddProperty />} />
             <Route path="/ownerShip" element={<Ownership />} />
+            <Route path="/myAdminProperty" element={<MyAdminProperty />} />
           </Route>
         </Routes>
       </section>
