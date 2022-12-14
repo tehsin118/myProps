@@ -1,5 +1,5 @@
 .admin-add-property {
-  // background-color: #fff;
+  background-color: #fff;
   border-radius: 15px;
   padding: 25px;
 
@@ -12,6 +12,7 @@
       padding-top: 25px;
       padding-left: 60px;
       padding-right: 60px;
+      padding-bottom: 100px;
 
       .tag {
         font-family: "Manrope";
@@ -43,8 +44,13 @@
         margin-top: 20px;
         margin-bottom: 24px;
       }
+      .property-type-tabs {
+        // margin-bottom: 28px;
+      }
+      .input-lable1 {
+        margin-top: 28px;
+        margin-bottom: 15px;
 
-      .input-lable {
         h5 {
           font-family: "Manrope";
           font-style: normal;
@@ -55,8 +61,88 @@
           span {
             color: #f7b03e;
             padding-right: 30px;
-            margin-left: -50px;
+            margin-left: -46px;
           }
+        }
+        h2 {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 20px;
+          color: #000000;
+          margin-top: 8px;
+
+          span {
+            &:first-child {
+              margin-right: 8px;
+            }
+            &:last-child {
+              font-family: "Manrope";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 15px;
+              color: #818181;
+              margin-left: 13px;
+            }
+          }
+        }
+      }
+
+      .select-prop-type {
+        width: 100%;
+        background-color: #fff;
+        border: 0.5px solid #888887;
+        border-radius: 7px;
+        padding: 10px 15px;
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #656565;
+
+        &:focus {
+          border: 0.5px solid #f7b03e;
+          outline: #f7b03e;
+        }
+      }
+      .property-detail-input {
+        width: 100%;
+        background-color: #fff;
+        border: 0.5px solid #888887;
+        border-radius: 7px;
+        padding: 10px 15px;
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #656565;
+
+        &::placeholder {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #656565;
+          text-transform: capitalize;
+        }
+
+        &:focus {
+          border: 0.5px solid #f7b03e;
+          outline: #f7b03e;
+        }
+      }
+      .prop-size {
+        button {
+          padding: 10px 55px;
+          margin-left: 20px;
+          border: 0.5px solid #888887;
+          border-radius: 7px;
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #f7b03e;
+          background: transparent;
         }
       }
     }

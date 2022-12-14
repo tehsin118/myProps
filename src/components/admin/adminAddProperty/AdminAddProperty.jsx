@@ -9,14 +9,12 @@ const AdminAddProperty = () => {
         <div className="admin-add-property-content">
           <div className="left-content">
             <p className="tag">+ Add Property</p>
-
             <div className="property-radio-btn">
               <img src={sellProp} alt="" />
             </div>
             <div className="input-lable">
               <h6>Upload image of your property</h6>
             </div>
-
             <div className="img-upload">
               <Icon
                 icon="ph:image-bold"
@@ -26,20 +24,86 @@ const AdminAddProperty = () => {
               />
               <input type="file" />
             </div>
-
             <div className="input-lable">
               <h5>Property Type</h5>
             </div>
             <div className="property-type-tabs mt-4">
               <img src={sellProp} alt="" />
             </div>
-
-            <div className="input-lable">
+            <div className="input-lable1">
               <h5>
                 <span>1)</span> Property Type
               </h5>
             </div>
+            <select id="cars" className="select-prop-type">
+              <option value="none" disabled>
+                Select City
+              </option>
+              <option value="saab">Saab</option>
+              <option value="vw">VW</option>
+              <option value="audi">Audi</option>
+            </select>
+            <div className="input-lable1">
+              <h5>
+                <span>2)</span> Address
+              </h5>
+            </div>
+            <input
+              type="text"
+              placeholder="enter location"
+              className="property-detail-input"
+            />
+            <div className="input-lable1">
+              <h5>
+                <span>3)</span> Property Size
+              </h5>
+            </div>
+            <div className="d-flex prop-size">
+              <input
+                type="number"
+                placeholder="enter size"
+                className="property-detail-input"
+              />
+              <button>Marla</button>
+            </div>
+            <div className="input-lable1">
+              <h5>
+                <span>3)</span> Price
+              </h5>
+
+              <h2>
+                <span>
+                  <Icon
+                    icon="material-symbols:euro"
+                    color="black"
+                    width="20"
+                    height="20"
+                  />
+                </span>
+                100
+                <span className="per-bond">Per bond</span>
+              </h2>
+            </div>
+            <input
+              type="number"
+              placeholder="enter price"
+              className="property-detail-input"
+            />
+            <div>
+              <label for="bond" className="price-bond-number">
+                1 <span>bond</span>
+              </label>
+              <input
+                type="radio"
+                id="javascript"
+                name="fav_language"
+                value="JavaScript"
+                className="radio-btns"
+              />
+               
+            </div>
           </div>
+
           <div className="right-content">
             <div className="property-img">
               <img

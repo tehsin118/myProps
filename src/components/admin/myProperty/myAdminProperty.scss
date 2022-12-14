@@ -110,8 +110,7 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, auto);
-      gap: 22px;
-      margin-inline: auto;
+      gap: 22px 22px;
 
       .property-card {
         border: 1px solid #c7c7c7;

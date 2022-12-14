@@ -10,6 +10,8 @@ import DashboardAdmin from "../dashboard/DashboardAdmin";
 import Ownership from "../ownership/Ownership";
 import AdminAddProperty from "../adminAddProperty/AdminAddProperty";
 import MyAdminProperty from "../myProperty/MyAdminProperty";
+import Investors from "../investors/Investors";
+import ChangeOwnership from "../ownership/ChangeOwnership";
 
 const AsidebarAdmin = () => {
   return (
@@ -77,7 +79,7 @@ const AsidebarAdmin = () => {
                 </li>
 
                 <li class="nav-item">
-                  <NavLink class="nav-link" to="#">
+                  <NavLink class="nav-link" to="/investors">
                     <Icon
                       icon="fluent-mdl2:hexadite-investigation-semi-auto"
                       width="20"
@@ -100,6 +102,8 @@ const AsidebarAdmin = () => {
             <Route path="/adminAddProperty" element={<AdminAddProperty />} />
             <Route path="/ownerShip" element={<Ownership />} />
             <Route path="/myAdminProperty" element={<MyAdminProperty />} />
+            <Route path="/investors" element={<Investors />} />
+            <Route path="/changeOwner" element={<ChangeOwnership />} />
           </Route>
         </Routes>
       </section>
