@@ -1,0 +1,183 @@
+.investor-sale-property {
+  padding: 65px;
+  background-color: #fff;
+  border-radius: 15px;
+  .go-back {
+    margin-bottom: 35px;
+    a {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #000000;
+    }
+  }
+
+  .investor-sale-property-content {
+    display: flex;
+    margin-top: 60px;
+    justify-content: space-between;
+
+    .left-content {
+      width: 59%;
+
+      .publish-form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 40px 22px;
+
+        p {
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 13px;
+          color: #7a7a7a;
+          padding: 0px 0px 8px 8px;
+        }
+
+        input {
+          border: 1px solid #bdbdbd;
+          border-radius: 11px;
+          background-color: transparent;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #969696;
+          padding: 9px 8px;
+          width: 80%;
+
+          &::placeholder {
+            font-weight: 500;
+            font-size: 15px;
+            color: #969696;
+          }
+          &:focus {
+            outline: #f7b03e;
+            border: 1px solid #f7b03e;
+          }
+        }
+
+        .select-bond {
+          border: 1px solid #bdbdbd;
+          border-radius: 11px;
+          background-color: transparent;
+          font-family: "Poppins";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          color: #969696;
+          padding: 5px 8px;
+          width: 80%;
+
+          &option {
+          }
+          &::placeholder {
+            font-weight: 500;
+            font-size: 15px;
+            color: #969696;
+          }
+
+          &:focus {
+            outline: #f7b03e;
+            border: 1px solid #f7b03e;
+          }
+        }
+      }
+      .publish-btn {
+        button {
+          margin-top: 60px;
+          border: none;
+          background: #f7b03e;
+          border-radius: 12px;
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          color: #000000;
+          padding: 10px 120px;
+        }
+      }
+    }
+    .right-content {
+      width: 39%;
+      border-radius: 15px;
+      width: 35%;
+      // padding-top: 40px;
+      display: flex;
+      justify-content: center;
+      .right-pro {
+        border: 1px solid #c7c7c7;
+        border-radius: 15px;
+        width: fit-content;
+        padding: 30px;
+
+        .property-img {
+          h3 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 20px;
+          }
+          margin-bottom: 34px;
+        }
+        .bonds-val {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 30px;
+          border-bottom: 0.5px solid #8e8e8e;
+          margin-bottom: 25px;
+          h1 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #000000;
+          }
+          span {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #000000;
+          }
+          h2 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+          }
+        }
+        .total {
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+          }
+
+          h4 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            color: #000000;
+
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

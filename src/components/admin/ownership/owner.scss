@@ -439,3 +439,31 @@
     }
   }
 }
+
+@media screen and (max-width: 1600px) {
+  .change-ownership {
+    .owner-change {
+      .left {
+        width: 68%;
+      }
+      .right {
+        width: 30%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .change-ownership {
+    .owner-change {
+      display: flex;
+      flex-wrap: wrap;
+      .left {
+        width: 100%;
+      }
+      .right {
+        width: 100%;
+      }
+    }
+  }
+}

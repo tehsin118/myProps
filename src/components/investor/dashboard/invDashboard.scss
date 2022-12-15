@@ -1,0 +1,266 @@
+.admin-dashoard {
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 30px;
+  .sect-head {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    color: #11142d;
+    margin-bottom: 28px;
+  }
+  .admin-dashboard-content {
+    .dash-top-content {
+      display: flex;
+      justify-content: space-between;
+      .left-content {
+        width: 59%;
+        .lt-content {
+          display: flex;
+          justify-content: space-between;
+          .dashViewProps {
+            img {
+              max-width: 100%;
+            }
+          }
+          .invest-profit-wrapper {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 266px;
+
+            .v-invest {
+              padding: 18px 22px;
+              background: #f4f4f4;
+              border-radius: 15px;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .v-profit {
+                display: flex;
+                flex-direction: column;
+                h1 {
+                  font-family: "Manrope";
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 24px;
+                  color: #11142d;
+                }
+                p {
+                  font-family: "Manrope";
+                  font-style: normal;
+                  font-weight: 500;
+                  font-size: 14px;
+                  color: #808191;
+                  margin-bottom: 2px;
+                }
+              }
+
+              h2 {
+                font-family: "Manrope";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 19px;
+                color: #11142d;
+              }
+
+              .investor-chart {
+                width: 50px;
+                height: 50px;
+              }
+            }
+          }
+        }
+      }
+      .right-content {
+        width: 39%;
+        // background-color: rgb(188, 192, 192);
+        background: #f4f4f4;
+        border-radius: 15px;
+        padding-top: 10px;
+      }
+    }
+
+    .dash-revenue-content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 45px;
+      .left-content {
+        background-color: #f4f4f4;
+        border-radius: 15px;
+
+        width: 59%;
+      }
+      .right-content {
+        width: 39%;
+        background-color: #f4f4f4;
+        border-radius: 15px;
+
+        padding: 20px 20px 0px 20px;
+
+        .rv-sect-header {
+          h1 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            color: #11142d;
+            margin-bottom: 15px;
+          }
+        }
+
+        .recent-investors {
+          img {
+            margin-right: 10px;
+          }
+
+          .member-detail {
+            h6 {
+              font-family: "Manrope";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 14px;
+              color: #11142d;
+            }
+            p {
+              font-family: "Manrope";
+              font-style: normal;
+              font-weight: 400;
+              font-size: 12px;
+
+              color: #808191;
+            }
+          }
+        }
+      }
+    }
+
+    .new-invested {
+      background-color: #f4f4f4;
+      border-radius: 15px;
+
+      margin-top: 25px;
+      padding: 33px 18px 33px 18px;
+    }
+
+    .newly-invested-properties {
+      .section-headings {
+        h1 {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          color: #11142d;
+          margin-bottom: 20px;
+        }
+      }
+
+      .new-props-card {
+        width: fit-content;
+        .details {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          .left-d {
+            h1 {
+              font-family: "Manrope";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              color: #11142d;
+              margin-bottom: 3px;
+            }
+          }
+          .right-d {
+            .currency {
+              background: rgba(247, 176, 62, 0.16);
+              border-radius: 4px;
+              font-family: "Manrope";
+              font-style: normal;
+              font-weight: 600;
+              font-size: 12px;
+              color: #f7b03e;
+              padding: 7px 9px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1750px) {
+  .admin-dashoard {
+    .admin-dashboard-content {
+      .dash-top-content {
+        .right-content {
+          overflow-x: scroll;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .admin-dashoard {
+    .admin-dashboard-content {
+      .dash-top-content {
+        .right-content {
+          overflow-x: scroll;
+        }
+
+        .lt-content {
+          .invest-profit-wrapper {
+            width: 200px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1480px) {
+  .admin-dashoard {
+    .admin-dashboard-content {
+      .dash-top-content {
+        display: flex;
+        flex-wrap: wrap;
+        .left-content {
+          width: 100%;
+          .lt-content {
+            .invest-profit-wrapper {
+              width: 300px !important;
+            }
+          }
+        }
+
+        .right-content {
+          width: 100% !important;
+          margin-top: 45px;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .admin-dashoard {
+    .admin-dashboard-content {
+      .dash-top-content {
+        display: flex;
+        flex-wrap: wrap;
+        .left-content {
+          width: 100%;
+          .lt-content {
+            .invest-profit-wrapper {
+              width: 250px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

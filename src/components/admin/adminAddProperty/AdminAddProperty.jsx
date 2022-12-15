@@ -9,99 +9,360 @@ const AdminAddProperty = () => {
         <div className="admin-add-property-content">
           <div className="left-content">
             <p className="tag">+ Add Property</p>
+
+            {/* Property sell buy radio */}
             <div className="property-radio-btn">
               <img src={sellProp} alt="" />
             </div>
-            <div className="input-lable">
-              <h6>Upload image of your property</h6>
+
+            {/* Upload Img */}
+
+            <div>
+              <div className="input-lable">
+                <h6>Upload image of your property</h6>
+              </div>
+              <div className="img-upload">
+                <Icon
+                  icon="ph:image-bold"
+                  color="#4879f5"
+                  width="170"
+                  height="170"
+                />
+                <input type="file" />
+              </div>
             </div>
-            <div className="img-upload">
-              <Icon
-                icon="ph:image-bold"
-                color="#4879f5"
-                width="170"
-                height="170"
-              />
-              <input type="file" />
+
+            {/* Property Type Tabs */}
+            <div>
+              <div className="input-lable">
+                <h5>Property Type</h5>
+              </div>
+              <div className="property-type-tabs mt-4">
+                <img src={sellProp} alt="" />
+              </div>
             </div>
-            <div className="input-lable">
-              <h5>Property Type</h5>
+
+            {/* Property Type Select */}
+            <div>
+              <div className="input-lable1">
+                <h5>
+                  <span>1)</span> Property Type
+                </h5>
+              </div>
+
+              <select id="propertyType" className="select-prop-type">
+                <option value="" disabled selected>
+                  Select City
+                </option>
+                <option value="lahore">Lahore</option>
+                <option value="Rawalpindi">RWP</option>
+                <option value="isb">Isb</option>
+              </select>
             </div>
-            <div className="property-type-tabs mt-4">
-              <img src={sellProp} alt="" />
-            </div>
-            <div className="input-lable1">
-              <h5>
-                <span>1)</span> Property Type
-              </h5>
-            </div>
-            <select id="cars" className="select-prop-type">
-              <option value="none" disabled>
-                Select City
-              </option>
-              <option value="saab">Saab</option>
-              <option value="vw">VW</option>
-              <option value="audi">Audi</option>
-            </select>
-            <div className="input-lable1">
-              <h5>
-                <span>2)</span> Address
-              </h5>
-            </div>
-            <input
-              type="text"
-              placeholder="enter location"
-              className="property-detail-input"
-            />
-            <div className="input-lable1">
-              <h5>
-                <span>3)</span> Property Size
-              </h5>
-            </div>
-            <div className="d-flex prop-size">
+
+            {/* Address */}
+            <div>
+              <div className="input-lable1">
+                <h5>
+                  <span>2)</span> Address
+                </h5>
+              </div>
               <input
-                type="number"
-                placeholder="enter size"
+                type="text"
+                placeholder="enter location"
                 className="property-detail-input"
               />
-              <button>Marla</button>
             </div>
+            {/* Property Size */}
+            <div>
+              <div className="input-lable1">
+                <h5>
+                  <span>3)</span> Property Size
+                </h5>
+              </div>
+              <div className="d-flex prop-size">
+                <input
+                  type="number"
+                  placeholder="enter size"
+                  className="property-detail-input"
+                />
+                <button>Marla</button>
+              </div>
+            </div>
+
+            {/* Price */}
+            <div>
+              <div className="input-lable1">
+                <h5>
+                  <span>4)</span> Price
+                </h5>
+
+                <h2>
+                  <span>
+                    <Icon
+                      icon="material-symbols:euro"
+                      color="black"
+                      width="20"
+                      height="20"
+                    />
+                  </span>
+                  100
+                  <span className="per-bond">Per bond</span>
+                </h2>
+              </div>
+              <input
+                type="number"
+                placeholder="enter price"
+                className="property-detail-input"
+              />
+              <div className="bonds-radio-btn">
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bond" id="" value="" />
+                    <p>1 Bond</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bond" id="" value="" />
+                    <p>2 Bond</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bond" id="" value="" />
+                    <p>5 Bond</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bond" id="" value="" />
+                    <p>10 Bond</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bond" id="" value="" />
+                    <p>20 Bond</p>
+                  </label>
+                </div>
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bond" id="" value="" />
+                    <p>50 Bond</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+            {/* Bedroom */}
+            <div>
+              <div className="input-lable1">
+                <h5>
+                  <span>5)</span> Bedroom
+                </h5>
+              </div>
+
+              <div className="bedroom-radio-btn d-flex">
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>Studio</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>1</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>2</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>3</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>4</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>5</p>
+                  </label>
+                </div>
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>6</p>
+                  </label>
+                </div>
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>7</p>
+                  </label>
+                </div>
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>8</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>9</p>
+                  </label>
+                </div>
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>10</p>
+                  </label>
+                </div>
+
+                <div className="b1">
+                  <label>
+                    <input type="radio" name="bedroom" id="" value="" />
+                    <p>10+</p>
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            {/* Bathroom */}
+
             <div className="input-lable1">
               <h5>
-                <span>3)</span> Price
+                <span>6)</span> Bathroom
               </h5>
+            </div>
 
-              <h2>
-                <span>
-                  <Icon
-                    icon="material-symbols:euro"
-                    color="black"
-                    width="20"
-                    height="20"
-                  />
-                </span>
-                100
-                <span className="per-bond">Per bond</span>
-              </h2>
+            <div className="bathroom-radio-btn d-flex">
+              <div className="b1">
+                <label>
+                  <input type="radio" name="a-bath" id="" value="" />
+                  <p>1</p>
+                </label>
+              </div>
+
+              <div className="b1">
+                <label>
+                  <input type="radio" name="a-bath" id="" value="" />
+                  <p>2</p>
+                </label>
+              </div>
+
+              <div className="b1">
+                <label>
+                  <input type="radio" name="a-bath" id="" value="" />
+                  <p>3</p>
+                </label>
+              </div>
+
+              <div className="b1">
+                <label>
+                  <input type="radio" name="a-bath" id="" value="" />
+                  <p>4</p>
+                </label>
+              </div>
+
+              <div className="b1">
+                <label>
+                  <input type="radio" name="a-bath" id="" value="" />
+                  <p>5</p>
+                </label>
+              </div>
+
+              <div className="b1">
+                <label>
+                  <input type="radio" name="a-bath" id="" value="" />
+                  <p>6</p>
+                </label>
+              </div>
+
+              <div className="b1">
+                <label>
+                  <input type="radio" name="a-bath" id="" value="" />
+                  <p>7</p>
+                </label>
+              </div>
             </div>
-            <input
-              type="number"
-              placeholder="enter price"
-              className="property-detail-input"
-            />
+
+            {/* Title */}
             <div>
-              <label for="bond" className="price-bond-number">
-                1 <span>bond</span>
-              </label>
+              <div className="input-lable1">
+                <h5>
+                  <span>7)</span> Title
+                </h5>
+              </div>
               <input
-                type="radio"
-                id="javascript"
-                name="fav_language"
-                value="JavaScript"
-                className="radio-btns"
+                type="text"
+                placeholder="Enter property title"
+                className="property-detail-input"
               />
-               
             </div>
+
+            {/* Description */}
+            <div className="description">
+              <div className="input-lable1">
+                <h5>Description</h5>
+              </div>
+              <textarea
+                type="text"
+                placeholder="Describe your property features"
+                className="property-detail-input"
+              />
+            </div>
+
+            {/* Contact Information */}
+            <div className="contact-information">
+              <div className="input-lable1">
+                <h5>Contact Information</h5>
+              </div>
+              <div className="ci-content">
+                <div className="ci-form">
+                  <div className="input-lable1">
+                    <h4>Email</h4>
+                  </div>
+                  <input
+                    type="email"
+                    placeholder="Enter Email"
+                    className="property-detail-input"
+                  />
+
+                  <div className="input-lable1">
+                    <h4>Mobile</h4>
+                  </div>
+                  <input
+                    type="number"
+                    placeholder="Enter Mobile Number"
+                    className="property-detail-input"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <button className="add-prop">Add Property</button>
           </div>
 
           <div className="right-content">

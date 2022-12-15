@@ -1,0 +1,281 @@
+.invest-again {
+  padding: 28px 60px 200px 60px;
+  background-color: #fff;
+  border-radius: 15px;
+
+  .go-back {
+    margin-bottom: 35px;
+    a {
+      font-family: "Poppins";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      color: #000000;
+    }
+  }
+  .invest-again-content {
+    padding-left: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .l-content {
+      width: 52%;
+
+      .s-node {
+        p {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          color: #787878;
+        }
+        h1 {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 20px;
+          color: #f73e5f;
+          text-align: end;
+          margin-top: 20px;
+          margin-right: 30px;
+          margin-bottom: 10px;
+
+          span {
+            &:first-child {
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      .bond-select-card {
+        background: #635bff;
+        border-radius: 10px;
+        padding: 35px 35px 35px 35px;
+        width: fit-content;
+
+        .price-bond {
+          display: flex;
+          align-items: center;
+          h4 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+          }
+          p {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 15px;
+            color: #fdfcfc;
+            margin-left: 20px;
+          }
+        }
+
+        .bond-select-btn {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          padding: 0;
+          margin: 0;
+          margin-top: 20px;
+
+          .b1 {
+            margin-right: 15px;
+            margin-top: 10px;
+
+            label {
+              cursor: pointer;
+              width: fit-content;
+              p {
+                padding: 10px 20px;
+                font-family: "Manrope";
+                font-style: normal;
+                font-weight: 500;
+                font-size: 15px;
+                color: #ffffff;
+                border: 0.75px solid #fefefe;
+                border-radius: 7px;
+              }
+
+              [type="radio"] {
+                position: absolute;
+                opacity: 0;
+                width: 0;
+                height: 0;
+                &:checked + p {
+                  background-color: #fff;
+                  border: 1.25px solid #000;
+                  border-radius: 7px;
+                  color: #000;
+                  font-weight: 800;
+                }
+              }
+            }
+          }
+        }
+
+        .incremental {
+          margin-top: 20px;
+          width: fit-content;
+          h5 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+            color: #ffffff;
+            border: 0.75px solid #fefefe;
+            border-radius: 7px;
+            padding: 7px 20px;
+            input {
+              width: 50px;
+
+              background-color: transparent;
+              outline: none;
+              border: none;
+              font-weight: 500;
+              font-size: 20px;
+              color: #ffffff;
+              text-align: center;
+            }
+          }
+
+          .inc,
+          .dec {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .continue {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 30px;
+        margin-top: 20px;
+        button {
+          border: none;
+          background: #f7b03e;
+          border-radius: 12px;
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          color: #000000;
+          padding: 15px 80px;
+          cursor: pointer;
+        }
+      }
+    }
+    .r-content {
+      width: 46%;
+      display: flex;
+      justify-content: center;
+      .right-pro {
+        border: 1px solid #c7c7c7;
+        border-radius: 15px;
+        width: fit-content;
+        padding: 30px;
+
+        .property-img {
+          h3 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 20px;
+          }
+          margin-bottom: 34px;
+        }
+        .bonds-val {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding-bottom: 30px;
+          border-bottom: 0.5px solid #8e8e8e;
+          margin-bottom: 25px;
+          h1 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #000000;
+          }
+          span {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            color: #000000;
+          }
+          h2 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+          }
+        }
+        .total {
+          display: flex;
+          justify-content: space-between;
+
+          p {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            color: #000000;
+          }
+
+          h4 {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 800;
+            font-size: 20px;
+            color: #000000;
+
+            span {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .invest-again {
+    padding: 28px 20px 200px 20px;
+
+    .l-content {
+      width: 59%;
+    }
+    .r-content {
+      width: 39% !important;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .invest-again {
+    padding: 28px 20px 200px 20px;
+    .invest-again-content {
+      display: flex;
+      flex-wrap: wrap;
+      .l-content {
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      .r-content {
+        width: 100% !important;
+      }
+    }
+  }
+}

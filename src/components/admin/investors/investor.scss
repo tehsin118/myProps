@@ -1,0 +1,149 @@
+.investors {
+  background-color: #fff;
+  border-radius: 15px;
+
+  .section-head {
+    h1 {
+      font-family: "Manrope";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 25px;
+      letter-spacing: -0.01em;
+      color: #292d32;
+      padding-left: 40px;
+      padding-top: 40px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .my-table {
+    padding-left: 40px;
+    padding-right: 30px;
+
+    overflow-x: scroll;
+    .my-table-head {
+      padding: 15px 15px 15px 0;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      //   grid-template-columns: 250px 235px 140px 150px 200px 200px 250px;
+      grid-template-rows: repeat(auto);
+      // column-gap: 22px 22px 22px 22px 22px 10px 15px;
+
+      .p1 {
+        // background-color: red;
+      }
+
+      p {
+        font-family: "Manrope";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: #828282;
+      }
+    }
+
+    .my-table-content {
+      padding: 0 15px 0px 15px;
+
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      //   grid-template-columns: 250px 250px 140px 150px 200px 200px 250px;
+      grid-template-rows: repeat(auto);
+      margin-bottom: 10px;
+      border-top: 1px solid #eeeeee;
+      border-bottom: 1px solid #eeeeee;
+      padding: 10px 0;
+      .c1 {
+        display: flex;
+        align-items: center;
+        h6 {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 14px;
+          letter-spacing: -0.01em;
+          color: #292d32;
+        }
+
+        &.invest {
+          span {
+            padding: 0px 0px 0px 5px;
+          }
+          p {
+            padding-left: 5px;
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            letter-spacing: -0.01em;
+            &:last-child {
+              color: #f7b03e;
+            }
+          }
+        }
+
+        &.status {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 0px;
+
+          .pending-percent {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            color: #000000;
+            background: #a6e7d8;
+            border-radius: 60px;
+            padding: 5px 20px 5px 10px;
+            margin-bottom: 5px;
+          }
+          .status-title {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.01em;
+            color: #292d32;
+          }
+
+          .status-title-updt {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #4879f5;
+          }
+          .status-title-approve {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 4500;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.01em;
+            color: #000000;
+            background: #3be360;
+            border-radius: 60px;
+            padding: 5px 26px;
+          }
+          .status-approval-pending {
+            font-family: "Manrope";
+            font-style: normal;
+            font-weight: 4500;
+            font-size: 12px;
+            line-height: 16px;
+            letter-spacing: -0.01em;
+            color: #000000;
+            background: #f7b03e;
+            border-radius: 60px;
+            padding: 5px 26px;
+          }
+        }
+      }
+    }
+  }
+}

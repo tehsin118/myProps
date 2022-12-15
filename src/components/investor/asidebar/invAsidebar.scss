@@ -1,0 +1,120 @@
+.admin-asidebar {
+  position: fixed;
+  background: #ffffff;
+  border-radius: 0px 15px 15px 0px;
+  height: 100vh;
+  width: 16%;
+
+  .asidebar-content {
+    .logo {
+      padding: 7px 0px 50px 38px;
+    }
+
+    .admin-navbar {
+      padding-left: 38px;
+
+      .add-property {
+        a {
+          font-family: "Manrope";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          color: #ffffff;
+          display: flex;
+          align-items: center;
+          background: #f7b03e;
+          border-radius: 12px;
+          width: fit-content;
+          padding: 9px 50px 9px 18px;
+          img {
+            margin-right: 13px;
+          }
+        }
+      }
+      .navbar {
+        margin-top: 33px;
+        ul {
+          li {
+            margin: 0;
+            padding: 0;
+            margin-top: 40px;
+            &:first-child {
+              margin-top: 0;
+            }
+            a {
+              font-family: "Manrope";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              color: #808191;
+              display: flex;
+              align-items: center;
+              padding: 0;
+
+              .nav-icon {
+                margin-right: 21px;
+              }
+              &:active {
+                color: #000000;
+              }
+              &:focus {
+                color: #000000;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1450px) {
+    .logo {
+      img {
+        max-width: 80% !important;
+      }
+    }
+
+    .add-property {
+      a {
+        padding: 9px 30px 9px 18px !important;
+        img {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1300px) {
+    .add-property {
+      a {
+        padding: 9px 18px 9px 18px !important;
+      }
+    }
+  }
+  @media screen and (max-width: 1150px) {
+    .admin-navbar {
+      padding-left: 20px !important;
+      .add-property {
+        a {
+          padding: 9px !important;
+          font-weight: 700;
+          font-size: 13px !important;
+        }
+      }
+      .navbar {
+        a {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}
+
+.other-sction {
+  width: 82.5%;
+  position: absolute;
+  left: 17%;
+  // margin-right: 31px;
+  // background-color: #ffffff;
+  border-radius: 30px;
+}
