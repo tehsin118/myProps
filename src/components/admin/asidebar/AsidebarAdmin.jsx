@@ -5,13 +5,13 @@ import { Icon } from "@iconify/react";
 import weblogo from "../../../assets/images/logo.svg";
 import add from "../../../assets/images/add.svg";
 import AdminMessage from "../message/AdminMessage";
-
 import DashboardAdmin from "../dashboard/DashboardAdmin";
 import Ownership from "../ownership/Ownership";
 import AdminAddProperty from "../adminAddProperty/AdminAddProperty";
 import MyAdminProperty from "../myProperty/MyAdminProperty";
 import Investors from "../investors/Investors";
 import ChangeOwnership from "../ownership/ChangeOwnership";
+import PropertyDetail from "../propertyDetail/PropertyDetail";
 
 const AsidebarAdmin = () => {
   return (
@@ -55,7 +55,7 @@ const AsidebarAdmin = () => {
                 </li>
 
                 <li class="nav-item">
-                  <NavLink class="nav-link" to="/myAdminProperty">
+                  <NavLink class="nav-link" to="/adminProperty">
                     <Icon
                       icon="bi:house-check-fill"
                       width="20"
@@ -98,14 +98,17 @@ const AsidebarAdmin = () => {
         <Routes>
           <Route>
             <Route path="/" element={<DashboardAdmin />} />
-            <Route path="/adminMsg" element={<AdminMessage />} />
             <Route path="/adminAddProperty" element={<AdminAddProperty />} />
+            <Route path="/adminMsg" element={<AdminMessage />} />
+            <Route path="/adminProperty" element={<MyAdminProperty />} />
             <Route path="/ownerShip" element={<Ownership />} />
-            <Route path="/myAdminProperty" element={<MyAdminProperty />} />
             <Route path="/investors" element={<Investors />} />
             <Route path="/changeOwner" element={<ChangeOwnership />} />
+            <Route path="/adminPropertyDetail" element={<PropertyDetail />} />
           </Route>
         </Routes>
+
+        {/* <PropertyDetail /> */}
       </section>
     </div>
   );

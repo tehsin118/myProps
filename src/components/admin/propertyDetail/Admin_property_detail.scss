@@ -1,0 +1,539 @@
+.adminpropertydetail_sec {
+    background: #FFFFFF;
+    border-radius: 30px;
+
+
+    .apd-main {
+        display: grid;
+        grid-template-columns: 70% 30%;
+        margin-inline: auto;
+        margin-bottom: 40px;
+
+        .apd-left {
+
+            border-right: 1px solid #B5B2B2;
+            padding: 30px 103px 150px 40px;
+
+
+            .apd-left-tags {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 22px;
+
+                .left-anchor {
+                    font-family: 'Poppins';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 22px;
+                    /* identical to box height */
+
+
+                    color: #000000;
+
+                    .tag-icon1 {
+                        margin-right: 10px;
+
+                    }
+                }
+
+                .right-anchor {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 25px;
+                    /* identical to box height */
+
+
+                    color: #696969;
+
+                    .tag-icon2 {
+                        margin-left: 10px;
+                    }
+                }
+            }
+
+            .apd_main_img {
+                padding: 12px 11px;
+                border: 1px solid #C7C7C7;
+                border-radius: 15px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .apd_card_detail {
+                padding: 18px 16px 0px 24px;
+
+                .head {
+                    display: flex;
+                    align-items: flex-start;
+                    padding-bottom: 38px;
+
+                    .apd_card_detail_left {
+                        h4 {
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 25px;
+                            line-height: 34px;
+
+                            color: #000000;
+                        }
+
+                        h5 {
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: #696969;
+                        }
+                    }
+
+                    .apd_card_detail_right {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+
+
+                        h6 {
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 27px;
+
+                            color: #1877F2;
+                        }
+
+                        .euro {
+                            display: flex;
+                            align-items: flex-start;
+
+
+                            p {
+
+
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 25px;
+                                color: #000000;
+                            }
+
+                            span {
+                                margin-right: 6px;
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 25px;
+                                color: #000000;
+
+                            }
+                        }
+
+
+                    }
+                }
+
+                .heading {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 34px;
+
+                    color: #2B2B2B;
+                    margin-bottom: 9px;
+                }
+
+                .para {
+
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 17px;
+                    line-height: 23px;
+                    text-align: justify;
+                    color: #696969;
+                    margin-bottom: 24px;
+                }
+
+                .heading-2 {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 25px;
+                    line-height: 34px;
+
+                    color: #2B2B2B;
+                    margin-bottom: 40px;
+                }
+
+                .features-detail {
+                    .top {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 500px;
+                        margin-bottom: 60px;
+
+                        div {
+                            display: flex;
+                            align-items: flex-end;
+
+                            p {
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: #696969;
+                                margin-left: 14px;
+                            }
+                        }
+                    }
+
+                    .bottom {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: 300px;
+                        margin-bottom: 115px;
+
+                        div {
+                            display: flex;
+                            align-items: flex-end;
+
+                            p {
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 500;
+                                font-size: 16px;
+                                color: #696969;
+                                margin-left: 14px;
+                            }
+                        }
+                    }
+                }
+
+                .investors-div {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 50px;
+                    margin-bottom: 40px;
+
+                    .heading-3 {
+                        font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 20px;
+                        line-height: 27px;
+
+                        color: #2B2B2B;
+                    }
+
+                    .all {
+                        display: flex;
+                        align-items: flex-end;
+
+                        span {
+                            margin-right: 15px;
+                        }
+
+                        a {
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 20px;
+                            text-decoration-line: underline;
+
+                            color: #000000;
+                        }
+
+                    }
+                }
+
+                .investors-detail {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-right: 50px;
+
+                    .investor-det {
+                        display: flex;
+                        align-items: center;
+
+                        div {
+                            margin-left: 19px;
+
+                            h3 {
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 22px;
+                                letter-spacing: -0.01em;
+
+                                color: #292D32;
+                            }
+
+                            h6 {
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 13px;
+                                line-height: 18px;
+                                letter-spacing: -0.01em;
+
+                                color: #696969;
+                            }
+                        }
+
+                    }
+                }
+
+
+
+
+
+
+
+            }
+        }
+
+        .apd-right {
+            padding: 55px 103px 0px 72px;
+
+            .right-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 23px;
+
+                h6 {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 27px;
+
+                    color: #000000;
+                }
+
+                a {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-decoration-line: underline;
+
+                    color: #000000;
+                }
+            }
+
+            .other-property-cards {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                .other-property-card {
+                    border: 1px solid #C7C7C7;
+                    border-radius: 15px;
+                    padding: 12px 9px 28px 12px;
+                    margin-bottom: 30px;
+
+                    .card-bottom {
+                        padding: 13px 9px 20px 12px;
+                        display: flex;
+                        align-items: flex-start;
+                        justify-content: space-between;
+
+                        .card-left {
+                            h5 {
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 600;
+                                font-size: 16px;
+                                line-height: 22px;
+
+                                color: #000000;
+                            }
+                        }
+
+                        .card-right {
+                            display: flex;
+                            align-items: center;
+
+                            span,
+                            p {
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 19px;
+                                line-height: 26px;
+                                /* identical to box height */
+
+
+                                color: #F7B03E;
+                            }
+                        }
+                    }
+
+                    .card-detail {
+                        padding-left: 12px;
+
+                        span {
+                            font-family: 'Gilroy';
+                            font-style: normal;
+                            font-weight: 300;
+                            font-size: 15px;
+                            line-height: 136%;
+                            /* identical to box height, or 20px */
+
+
+                            color: #3E4958;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1750px) {
+
+    .adminpropertydetail_sec {
+        .apd-main {
+            .apd-left {
+                padding: 30px 43px 150px 30px;
+
+            }
+
+            .apd-right {
+                padding: 55px 43px 0px 42px;
+
+                .apd-head {
+                    .other-property-cards {
+                        .other-property-card {
+                            .card-bottom {
+                                .card-left {
+                                    h5 {
+                                        font-size: 14px;
+                                    }
+                                }
+
+                                .card-right {
+
+                                    span,
+                                    p {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1700px) {
+
+    .adminpropertydetail_sec {
+        .apd-main {
+            .apd-left {
+                padding: 30px 43px 0px 30px;
+            }
+
+            .apd-right {
+                padding: 30px 43px 150px 30px;
+
+                .other-property-cards {
+                    .other-property-card {
+                        .card-bottom {
+                            .card-left {
+                                h5 {
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .card-right {
+
+                                span,
+                                p {
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .adminpropertydetail_sec {
+        .apd-main {
+            display: flex;
+            flex-direction: column;
+
+            .apd-right {
+                .other-property-cards {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    column-gap: 20px;
+
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width:1080px) {
+
+    .adminpropertydetail_sec {
+        .apd-main {
+
+
+            .apd-right {
+
+                .other-property-cards {
+                    .other-property-card {
+                        .card-bottom {
+                            .card-left {
+                                h5 {
+                                    font-size: 13px;
+                                }
+                            }
+
+                            .card-right {
+
+                                span,
+                                p {
+                                    font-size: 13px;
+                                }
+                            }
+                        }
+
+                        .card-detail {
+                            span {
+                                font-size: 13px;
+                            }
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

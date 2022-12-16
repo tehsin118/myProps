@@ -1,4 +1,5 @@
 import React, { PureComponent } from "react";
+import { Link } from "react-router-dom";
 import {
   LineChart,
   Line,
@@ -110,9 +111,9 @@ const DashboardAdmin = () => {
             <div className="left-content">
               <div className="lt-content">
                 <div className="dashViewProps">
-                  <a href="#">
+                  <Link to="adminProperty">
                     <img src={viewProps} alt="" className="img-fluid" />
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="invest-profit-wrapper">

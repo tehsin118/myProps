@@ -14,10 +14,9 @@ import property7 from "../../../assets/images/properties/property7.png";
 import property8 from "../../../assets/images/properties/property8.png";
 
 const MyAdminProperty = () => {
+  const navigate = useNavigate();
   const navigateAdminProperty = () => {
-    // 👇️ navigate to /contacts
-    // navigate("/adminMsg");
-    alert("dsa");
+    navigate("/adminPropertyDetail");
   };
   return (
     <div>
@@ -32,7 +31,6 @@ const MyAdminProperty = () => {
           </div>
           <div className="right">
             <a href="#">
-              {" "}
               <img src={notifi} alt="..." className="img-fluid notify" />
             </a>
             <img src={profile} alt="..." className="img-fluid profile" />

@@ -7,7 +7,7 @@ const InvSaleProrperty = () => {
     <div>
       <section className="investor-sale-property">
         <div className="go-back">
-          <Link to="/ownerShip">
+          <Link to="/ivMyProperty">
             <Icon
               icon="material-symbols:arrow-back-rounded"
               color="black"

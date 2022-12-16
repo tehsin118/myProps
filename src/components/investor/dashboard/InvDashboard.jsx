@@ -1,4 +1,6 @@
 import React, { PureComponent } from "react";
+import { Link } from "react-router-dom";
+
 import {
   LineChart,
   Line,
@@ -115,9 +117,9 @@ const InvDashboard = () => {
             <div className="left-content">
               <div className="lt-content">
                 <div className="dashViewProps">
-                  <a href="#">
+                  <Link to="/ivMyProperty">
                     <img src={viewProps} alt="" className="img-fluid" />
-                  </a>
+                  </Link>
                 </div>
                 <div className="expense-mgt">
                   <div className="income">
