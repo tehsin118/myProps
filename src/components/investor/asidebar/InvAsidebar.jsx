@@ -11,6 +11,7 @@ import IvMessage from "../message/IvMessage";
 import IvestorMyProperty from "../myProperty/IvestorMyProperty";
 import InvSaleProrperty from "../saleProperty/InvSaleProrperty";
 import InvestAgain from "../investAgain/InvestAgain";
+import PaymentInfo from "../paymentInfo/PaymentInfo";
 
 const InvAsidebar = () => {
   return (
@@ -101,6 +102,7 @@ const InvAsidebar = () => {
             <Route path="/ivMyProperty" element={<IvestorMyProperty />} />
             <Route path="/invSaleProrperty" element={<InvSaleProrperty />} />
             <Route path="/investAgain" element={<InvestAgain />} />
+            <Route path="/payInfo" element={<PaymentInfo />} />
             {/* <Route path="/ownerShip" element={<Ownership />} />
             <Route path="/investors" element={<Investors />} />
             <Route path="/changeOwner" element={<ChangeOwnership />} /> */}

@@ -2,6 +2,9 @@ import { Icon } from "@iconify/react";
 import React from "react";
 import "./adminAddProperty.scss";
 import sellProp from "../../../assets/images/sell.svg";
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
+
 const AdminAddProperty = () => {
   return (
     <div>
@@ -12,7 +15,33 @@ const AdminAddProperty = () => {
 
             {/* Property sell buy radio */}
             <div className="property-radio-btn">
-              <img src={sellProp} alt="" />
+              <div className="b1">
+                <label>
+                  <input type="radio" name="t-residence" id="" value="" />
+                  <Icon
+                    icon="cil:house"
+                    color="black"
+                    width="75"
+                    height="75"
+                    className="ico"
+                  />
+                  <p>Sell</p>
+                </label>
+              </div>
+
+              <div className="b1">
+                <label>
+                  <input type="radio" name="t-residence" id="" value="" />
+                  <Icon
+                    icon="cil:house"
+                    color="black"
+                    width="75"
+                    height="75"
+                    className="ico"
+                  />
+                  <p>Sell</p>
+                </label>
+              </div>
             </div>
 
             {/* Upload Img */}
@@ -37,8 +66,203 @@ const AdminAddProperty = () => {
               <div className="input-lable">
                 <h5>Property Type</h5>
               </div>
-              <div className="property-type-tabs mt-4">
-                <img src={sellProp} alt="" />
+              <div className="prop-type-tabs">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="home-tab-pane"
+                      aria-selected="true"
+                    >
+                      <Icon
+                        icon="ph:house-bold"
+                        color="#f7b03e"
+                        width="32"
+                        height="32"
+                        className="ico"
+                      />
+                      <p>Residential</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile-tab-pane"
+                      aria-selected="false"
+                    >
+                      <Icon
+                        icon="mdi:office-building"
+                        color="#f7b03e"
+                        width="32"
+                        height="32"
+                        className="ico"
+                      />
+                      <p>Commercial</p>
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="contact-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#contact-tab-pane"
+                      type="button"
+                      role="tab"
+                      aria-controls="contact-tab-pane"
+                      aria-selected="false"
+                    >
+                      <Icon
+                        icon="mdi:sign-real-estate"
+                        color="#f7b03e"
+                        width="32"
+                        height="32"
+                        className="ico"
+                      />
+                      <p>Plot</p>
+                    </button>
+                  </li>
+                </ul>
+
+                <div class="tab-content d-flex" id="myTabContent">
+                  <div
+                    class="tab-pane fade show active "
+                    id="home-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="home-tab"
+                    tabindex="0"
+                  >
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>House</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Flat</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Room</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Apartment</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Upper Portion</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Lower Portion</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Pent House</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="profile-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="profile-tab"
+                    tabindex="1"
+                  >
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Office</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Shop</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Factory</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Building</p>
+                      </label>
+                    </div>
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="contact-tab-pane"
+                    role="tabpanel"
+                    aria-labelledby="contact-tab"
+                    tabindex="2"
+                  >
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Residential</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Commercial</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Industrial</p>
+                      </label>
+                    </div>
+
+                    <div className="b1">
+                      <label>
+                        <input type="radio" name="s-residence" id="" value="" />
+                        <p>Agricultural</p>
+                      </label>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -86,7 +310,7 @@ const AdminAddProperty = () => {
                   placeholder="enter size"
                   className="property-detail-input"
                 />
-                <button>Marla</button>
+                <button disabled>Marla</button>
               </div>
             </div>
 
