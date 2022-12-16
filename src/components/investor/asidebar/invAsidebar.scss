@@ -62,6 +62,23 @@
               }
             }
           }
+
+          .offers {
+            li {
+              margin-top: 10px;
+              a {
+                font-family: "Manrope";
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                color: #808191;
+                &:active,
+                &:focus {
+                  color: #000000;
+                }
+              }
+            }
+          }
         }
       }
     }

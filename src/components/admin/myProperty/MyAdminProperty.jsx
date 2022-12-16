@@ -1,5 +1,6 @@
 import React from "react";
 import "./myAdminProperty.scss";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import sh from "../../../assets/images/properties/search.png";
 import notifi from "../../../assets/images/properties/notification.svg";
 import profile from "../../../assets/images/properties/profile.svg";
@@ -13,6 +14,11 @@ import property7 from "../../../assets/images/properties/property7.png";
 import property8 from "../../../assets/images/properties/property8.png";
 
 const MyAdminProperty = () => {
+  const navigateAdminProperty = () => {
+    // 👇️ navigate to /contacts
+    // navigate("/adminMsg");
+    alert("dsa");
+  };
   return (
     <div>
       <section className="admin-property">
@@ -40,7 +46,7 @@ const MyAdminProperty = () => {
         <div className="properties-content">
           <h1>All Properties</h1>
           <div className="properties-cards">
-            <div className="property-card">
+            <div className="property-card" onClick={navigateAdminProperty}>
               <img src={property1} alt="..." className="img-fluid" />
               <div className="row">
                 <div className="col-7">
@@ -53,7 +59,7 @@ const MyAdminProperty = () => {
               </div>
             </div>
             <div className="property-card">
-              <img src={property2} alt="..." />
+              <img src={property2} alt="..." className="img-fluid" />
               <div className="row">
                 <div className="col-7">
                   <h5>Bosschestraat 6 The Hague</h5>
@@ -65,7 +71,7 @@ const MyAdminProperty = () => {
               </div>
             </div>
             <div className="property-card">
-              <img src={property3} alt="..." />
+              <img src={property3} alt="..." className="img-fluid" />
               <div className="row">
                 <div className="col-7">
                   <h5>Bosschestraat 6 The Hague</h5>
@@ -77,7 +83,7 @@ const MyAdminProperty = () => {
               </div>
             </div>
             <div className="property-card">
-              <img src={property4} alt="..." />
+              <img src={property4} alt="..." className="img-fluid" />
               <div className="row">
                 <div className="col-7">
                   <h5>Bosschestraat 6 The Hague</h5>
@@ -89,7 +95,7 @@ const MyAdminProperty = () => {
               </div>
             </div>
             <div className="property-card">
-              <img src={property5} alt="..." />
+              <img src={property5} alt="..." className="img-fluid" />
               <div className="row">
                 <div className="col-7">
                   <h5>Bosschestraat 6 The Hague</h5>
@@ -101,7 +107,7 @@ const MyAdminProperty = () => {
               </div>
             </div>
             <div className="property-card">
-              <img src={property6} alt="..." />
+              <img src={property6} alt="..." className="img-fluid" />
               <div className="row">
                 <div className="col-7">
                   <h5>Bosschestraat 6 The Hague</h5>
@@ -113,7 +119,7 @@ const MyAdminProperty = () => {
               </div>
             </div>
             <div className="property-card">
-              <img src={property7} alt="..." />
+              <img src={property7} alt="..." className="img-fluid" />
               <div className="row">
                 <div className="col-7">
                   <h5>Bosschestraat 6 The Hague</h5>
@@ -125,7 +131,7 @@ const MyAdminProperty = () => {
               </div>
             </div>
             <div className="property-card">
-              <img src={property8} alt="..." />
+              <img src={property8} alt="..." className="img-fluid" />
               <div className="row">
                 <div className="col-7">
                   <h5>Bosschestraat 6 The Hague</h5>

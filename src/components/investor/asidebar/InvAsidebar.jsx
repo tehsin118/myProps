@@ -12,6 +12,10 @@ import IvestorMyProperty from "../myProperty/IvestorMyProperty";
 import InvSaleProrperty from "../saleProperty/InvSaleProrperty";
 import InvestAgain from "../investAgain/InvestAgain";
 import PaymentInfo from "../paymentInfo/PaymentInfo";
+import { Accordion } from "react-bootstrap";
+import SentOffers from "../offers/SentOffers";
+import RecievedOffers from "../offers/RecievedOffers";
+import AcceptedOffers from "../offers/AcceptedOffers";
 
 const InvAsidebar = () => {
   return (
@@ -77,18 +81,48 @@ const InvAsidebar = () => {
                     My Selling
                   </NavLink>
                 </li>
+                <div className=" offers mt-4">
+                  <div>
+                    <li class="nav-item">
+                      <NavLink class="nav-link" to="/sentOfr">
+                        <Icon
+                          icon="material-symbols:arrow-right-rounded"
+                          color="#808191"
+                          width="32"
+                          height="32"
+                          className="nav-icon"
+                        />
+                        Sent Offers
+                      </NavLink>
+                    </li>
 
-                {/* <li class="nav-item">
-                  <NavLink class="nav-link" to="/investors">
-                    <Icon
-                      icon="fluent-mdl2:hexadite-investigation-semi-auto"
-                      width="20"
-                      height="20"
-                      className="nav-icon"
-                    />
-                    Investors
-                  </NavLink>
-                </li> */}
+                    <li class="nav-item">
+                      <NavLink class="nav-link" to="/recOfr">
+                        <Icon
+                          icon="material-symbols:arrow-right-rounded"
+                          color="#808191"
+                          width="32"
+                          height="32"
+                          className="nav-icon"
+                        />
+                        Received Offers
+                      </NavLink>
+                    </li>
+
+                    <li class="nav-item">
+                      <NavLink class="nav-link" to="/accOfr">
+                        <Icon
+                          icon="material-symbols:arrow-right-rounded"
+                          color="#808191"
+                          width="32"
+                          height="32"
+                          className="nav-icon"
+                        />
+                        Accepted Offers
+                      </NavLink>
+                    </li>
+                  </div>
+                </div>
               </ul>
             </nav>
           </div>
@@ -103,6 +137,9 @@ const InvAsidebar = () => {
             <Route path="/invSaleProrperty" element={<InvSaleProrperty />} />
             <Route path="/investAgain" element={<InvestAgain />} />
             <Route path="/payInfo" element={<PaymentInfo />} />
+            <Route path="/sentOfr" element={<SentOffers />} />
+            <Route path="/recOfr" element={<RecievedOffers />} />
+            <Route path="/accOfr" element={<AcceptedOffers />} />
             {/* <Route path="/ownerShip" element={<Ownership />} />
             <Route path="/investors" element={<Investors />} />
             <Route path="/changeOwner" element={<ChangeOwnership />} /> */}

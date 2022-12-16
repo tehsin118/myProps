@@ -13,8 +13,10 @@ import {
 import "./invDashboard.scss";
 import viewProps from "../../../assets/images/viewProp.png";
 import member from "../../../assets/images/recentmmb.png";
-import { PieChart, Pie, Sector, Cell } from "recharts";
+// import { PieChart, Pie, Sector, Cell } from "recharts";
 import NewlyInvested from "./InvInvestment";
+import { CircularProgressbar, buildStyles } from "react-circular-progressbar";
+import "react-circular-progressbar/dist/styles.css";
 
 const InvDashboard = () => {
   const investor = [
@@ -100,6 +102,9 @@ const InvDashboard = () => {
       amt: 2100,
     },
   ];
+  const percentageIncome = 40;
+  const percentageProfit = 80;
+  const percentageExp = 50;
 
   return (
     <div>
@@ -114,121 +119,155 @@ const InvDashboard = () => {
                     <img src={viewProps} alt="" className="img-fluid" />
                   </a>
                 </div>
-
-                <div className="invest-profit-wrapper">
-                  {/* Total Investor View */}
-                  <div className="v-invest">
-                    <h2>
-                      View <br /> Investor
-                    </h2>
-
-                    <PieChart width={70} height={70}>
-                      <Pie
-                        data={investor}
-                        innerRadius={15}
-                        outerRadius={35}
-                        fill="#8884d8"
-                        paddingAngle={0}
-                        dataKey="value"
-                      >
-                        {investor.map((entry, index) => (
-                          <Cell
-                            key={`cell-${index}`}
-                            fill={investorColor[index % investorColor.length]}
-                          />
-                        ))}
-                      </Pie>
-                    </PieChart>
-                  </div>
-                  {/* Total Profit */}
-                  <div className="v-invest">
-                    <div className="v-profit ">
-                      <p>Total Profit</p>
-                      <h1>
-                        90 <span>%</span>
-                      </h1>
-                    </div>
-
-                    <PieChart width={70} height={70}>
-                      <Pie
-                        data={Tprofit}
-                        innerRadius={15}
-                        outerRadius={35}
-                        fill="#8884d8"
-                        paddingAngle={0}
-                        dataKey="value"
-                      >
-                        {Tprofit.map((entry, index) => (
-                          <Cell
-                            key={`cell-${index}`}
-                            fill={TprofitColor[index % TprofitColor.length]}
-                          />
-                        ))}
-                      </Pie>
-                    </PieChart>
-                  </div>
-                </div>
-
-                <div className="invest-profit-wrapper">
-                  {/* Last Month Profit graph */}
-                  <div className="v-invest">
-                    <div className="v-profit ">
-                      <p>Profit in last month</p>
-                      <h1>
-                        90 <span>%</span>
-                      </h1>
-                    </div>
-
-                    <PieChart width={70} height={70}>
-                      <Pie
-                        data={lMProfit}
-                        innerRadius={15}
-                        outerRadius={35}
-                        fill="#8884d8"
-                        paddingAngle={0}
-                        dataKey="value"
-                      >
-                        {lMProfit.map((entry, index) => (
-                          <Cell
-                            key={`cell-${index}`}
-                            fill={lMProfitColor[index % lMProfitColor.length]}
-                          />
-                        ))}
-                      </Pie>
-                    </PieChart>
+                <div className="expense-mgt">
+                  <div className="income">
+                    <p>Income</p>
+                    <CircularProgressbar
+                      className="circle-prog"
+                      value={percentageIncome}
+                      text={`${percentageIncome}%`}
+                      styles={{
+                        // Customize the root svg element
+                        root: {},
+                        // Customize the path, i.e. the "completed progress"
+                        path: {
+                          // Path color
+                          stroke: `rgba(129, 2, 255, ${
+                            percentageIncome / 100
+                          })`,
+                          // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                          strokeLinecap: "butt",
+                          // Customize transition animation
+                          transition: "stroke-dashoffset 0.5s ease 0s",
+                          // Rotate the path
+                          transform: "rotate(0.25turn)",
+                          transformOrigin: "center center",
+                        },
+                        // Customize the circle behind the path, i.e. the "total progress"
+                        trail: {
+                          // Trail color
+                          stroke: "#fff",
+                          // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                          strokeLinecap: "butt",
+                          // Rotate the trail
+                          transform: "rotate(0.25turn)",
+                          transformOrigin: "center center",
+                        },
+                        // Customize the text
+                        text: {
+                          // Text color
+                          fill: "#000",
+                          // Text size
+                          fontSize: "20px",
+                          fontWeight: "500",
+                          fontFamily: "Manrope",
+                        },
+                        // Customize background - only used when the `background` prop is true
+                        background: {
+                          fill: "#3e98c7",
+                        },
+                      }}
+                    />
                   </div>
 
-                  {/* Investore Profit graph */}
+                  <div className="income">
+                    <p>Profit</p>
 
-                  <div className="v-invest">
-                    <div className="v-profit ">
-                      <p>Total Profit</p>
-                      <h1>
-                        90 <span>%</span>
-                      </h1>
-                    </div>
+                    <CircularProgressbar
+                      className="circle-prog"
+                      value={percentageProfit}
+                      text={`${percentageProfit}%`}
+                      styles={{
+                        // Customize the root svg element
+                        root: {},
+                        // Customize the path, i.e. the "completed progress"
+                        path: {
+                          // Path color
+                          stroke: `rgba(129, 2, 255, ${
+                            percentageProfit / 100
+                          })`,
+                          // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                          strokeLinecap: "butt",
+                          // Customize transition animation
+                          transition: "stroke-dashoffset 0.5s ease 0s",
+                          // Rotate the path
+                          transform: "rotate(0.25turn)",
+                          transformOrigin: "center center",
+                        },
+                        // Customize the circle behind the path, i.e. the "total progress"
+                        trail: {
+                          // Trail color
+                          stroke: "#fff",
+                          // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                          strokeLinecap: "butt",
+                          // Rotate the trail
+                          transform: "rotate(0.25turn)",
+                          transformOrigin: "center center",
+                        },
+                        // Customize the text
+                        text: {
+                          // Text color
+                          fill: "#000",
+                          // Text size
+                          fontSize: "20px",
+                          fontWeight: "500",
+                          fontFamily: "Manrope",
+                        },
+                        // Customize background - only used when the `background` prop is true
+                        background: {
+                          fill: "#3e98c7",
+                        },
+                      }}
+                    />
+                  </div>
 
-                    <PieChart width={70} height={70}>
-                      <Pie
-                        data={investorProfit}
-                        innerRadius={15}
-                        outerRadius={35}
-                        fill="#8884d8"
-                        paddingAngle={0}
-                        dataKey="value"
-                      >
-                        {investorProfit.map((entry, index) => (
-                          <Cell
-                            key={`cell-${index}`}
-                            fill={
-                              investorProfitColor[
-                                index % investorProfitColor.length
-                              ]
-                            }
-                          />
-                        ))}
-                      </Pie>
-                    </PieChart>
+                  <div className="income">
+                    <p>Expenses</p>
+
+                    <CircularProgressbar
+                      className="circle-prog"
+                      value={percentageExp}
+                      text={`${percentageExp}%`}
+                      styles={{
+                        // Customize the root svg element
+                        root: {},
+                        // Customize the path, i.e. the "completed progress"
+                        path: {
+                          // Path color
+                          stroke: `rgba(129, 2, 255, ${percentageExp / 100})`,
+                          // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                          strokeLinecap: "butt",
+                          // Customize transition animation
+                          transition: "stroke-dashoffset 0.5s ease 0s",
+                          // Rotate the path
+                          transform: "rotate(0.25turn)",
+                          transformOrigin: "center center",
+                        },
+                        // Customize the circle behind the path, i.e. the "total progress"
+                        trail: {
+                          // Trail color
+                          stroke: "#fff",
+                          // Whether to use rounded or flat corners on the ends - can use 'butt' or 'round'
+                          strokeLinecap: "butt",
+                          // Rotate the trail
+                          transform: "rotate(0.25turn)",
+                          transformOrigin: "center center",
+                        },
+                        // Customize the text
+                        text: {
+                          // Text color
+                          fill: "#000",
+                          // Text size
+                          fontSize: "20px",
+                          fontWeight: "500",
+                          fontFamily: "Manrope",
+                        },
+                        // Customize background - only used when the `background` prop is true
+                        background: {
+                          fill: "#3e98c7",
+                        },
+                      }}
+                    />
                   </div>
                 </div>
               </div>

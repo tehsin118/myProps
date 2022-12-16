@@ -1,5 +1,5 @@
 .admin-property {
-  overflow-x: hidden;
+  // overflow-x: hidden;
   .properties-nav {
     display: flex;
     justify-content: space-between;
@@ -7,7 +7,7 @@
     background-color: #fff;
     border-radius: 15px;
     margin-bottom: 26px;
-    padding: 14px 60px 22px 26px;
+    padding: 20px 60px 20px 26px;
     // height: 79px;
 
     .left {
@@ -55,7 +55,7 @@
     .right {
       display: flex;
       align-items: center;
-      padding: 21px 6px 18px 0px;
+      // padding: 21px 6px 18px 0px;
 
       h6 {
         font-family: "Manrope";
@@ -110,12 +110,14 @@
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       grid-template-rows: repeat(2, auto);
-      gap: 22px 22px;
+      gap: 22px;
+      margin-inline: auto;
 
       .property-card {
         border: 1px solid #c7c7c7;
         border-radius: 15px;
         padding: 12px 9px 7px 12px;
+        cursor: pointer;
 
         h5 {
           font-family: "Manrope";
@@ -141,6 +143,45 @@
 
           p {
             margin-right: 9px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1535px) {
+  .admin-property {
+    .properties-content {
+      .properties-cards {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, auto);
+        gap: 22px;
+        margin-inline: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .admin-property {
+    .properties-nav {
+      padding: 15px 60px 15px 26px;
+
+      .left {
+        width: 427px;
+      }
+    }
+
+    .properties-content {
+      .properties-cards {
+        .property-card {
+          h5 {
+            font-size: 14px;
+          }
+
+          .card-right {
+            font-size: 15px;
           }
         }
       }

@@ -8,8 +8,8 @@ import InvAsidebar from "./components/investor/asidebar/InvAsidebar";
 function App() {
   return (
     <div className="App">
-      {/* <AsidebarAdmin /> */}
-      <InvAsidebar />
+      <AsidebarAdmin />
+      {/* <InvAsidebar /> */}
     </div>
   );
 }
